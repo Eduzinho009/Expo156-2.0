@@ -30,7 +30,7 @@ export default function RecargaScreen({ navigation }) {
     });
 
     // 🔹 Exibe mensagem de sucesso
-    setMensagem('✅ Pagamento válido!');
+    setMensagem(`Pagamento de R$ ${parseFloat(valor).toFixed(2).replace('.', ',')} realizado com sucesso!`);
     setValor('');
   };
 
@@ -51,11 +51,12 @@ export default function RecargaScreen({ navigation }) {
         />
 
         {/* Mensagem de sucesso */}
-        {mensagem !== '' && <Text style={styles.sucesso}>{mensagem}</Text>}
+        
 
         <TouchableOpacity style={styles.button} onPress={handleRecarga}>
           <Text style={styles.buttonText}>Pagar</Text>
-        </TouchableOpacity>
+        </TouchableOpacity><br /><br />
+        {mensagem !== '' && <Text style={styles.sucesso}>{mensagem}</Text>}
       </View>
       <FooterCustom />
     </KeyboardAvoidingView>

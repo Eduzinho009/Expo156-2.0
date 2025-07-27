@@ -17,7 +17,9 @@ export default function HistoricoScreen() {
     <View style={styles.container}>
       <HeaderCustom title="Histórico de Pagamentos" />
       {pagamentos.length === 0 ? (
-        <Text style={styles.vazio}>Nenhum pagamento realizado ainda.</Text>
+        <View style={styles.vazioContainer}>
+          <Text style={styles.vazio}>Nenhum pagamento realizado ainda.</Text>
+        </View>
       ) : (
         <FlatList
           data={pagamentos}
@@ -49,9 +51,12 @@ const styles = StyleSheet.create({
   },
   data: { fontSize: 16 },
   valor: { fontWeight: 'bold', fontSize: 16, color: theme.colors.primary },
+  vazioContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   vazio: {
-    textAlign: 'center',
-    marginTop: 50,
     fontSize: 16,
     color: theme.colors.text,
   },
