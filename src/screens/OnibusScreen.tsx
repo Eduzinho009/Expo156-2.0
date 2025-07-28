@@ -8,7 +8,6 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import type { RootStackParamList } from '../navigation/AppNavigator';
 import { Ionicons } from '@expo/vector-icons';
 
-
 type Linha = {
   id: string;
   nome: string;
@@ -47,14 +46,14 @@ export default function OnibusScreen() {
   const linhasIndisponiveis = linhas.filter(l => !l.disponivel);
 
   const handleLinhaPress = (linha: Linha) => {
-  if (linha.disponivel) {
-    navigation.navigate('Mapa', { 
-      linha: linha.nome || 'Linha não especificada' 
-    });
-  } else {
-    Alert.alert('Linha Indisponível', `A linha "${linha.nome}" está temporariamente indisponível.`);
-  }
-};
+    if (linha.disponivel) {
+      navigation.navigate('Mapa', { 
+        linha: linha.nome || 'Linha não especificada' 
+      });
+    } else {
+      Alert.alert('Linha Indisponível', `A linha "${linha.nome}" está temporariamente indisponível.`);
+    }
+  };
 
   const renderLinhaItem = (item: Linha, isDisponivel: boolean) => (
     <TouchableOpacity
@@ -64,10 +63,10 @@ export default function OnibusScreen() {
       <Ionicons
         name="bus"
         size={14}
-        color={isDisponivel ? theme.colors.primary : '#999'}
+        color={isDisponivel ? '#003C6E' : '#999'} // cor fixa para disponíveis
         style={{ marginRight: 4 }}
       />
-      <Text style={[styles.linha, { color: isDisponivel ? theme.colors.primary : '#999' }]} numberOfLines={1}>
+      <Text style={[styles.linha, { color: isDisponivel ? '#003C6E' : '#999' }]} numberOfLines={1}>
         {item.nome}
       </Text>
     </TouchableOpacity>

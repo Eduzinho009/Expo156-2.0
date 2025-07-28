@@ -12,7 +12,7 @@ export default function HeaderCustom({ title }: { title: string }) {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: theme.colors.primary,
+    backgroundColor: '#003C6E',
     paddingVertical: theme.spacing.md,
     paddingHorizontal: theme.spacing.lg,
     borderBottomLeftRadius: theme.radius.lg,

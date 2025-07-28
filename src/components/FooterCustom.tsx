@@ -13,7 +13,7 @@ export default function FooterCustom() {
 const styles = StyleSheet.create({
   container: {
     padding: theme.spacing.md,
-    backgroundColor: theme.colors.primary,
+    backgroundColor: '#003C6E',
     borderTopLeftRadius: theme.radius.lg,
     borderTopRightRadius: theme.radius.lg,
     ...theme.shadows.md,

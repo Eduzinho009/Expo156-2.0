@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
   label: {
     fontSize: theme.typography.h3.fontSize,
     fontWeight: theme.typography.h3.fontWeight,
-    color: theme.colors.text,
+    color: '#222222',
     marginBottom: theme.spacing.sm,
   },
   input: {
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
   },
   button: {
     marginLeft: '125px',
-    backgroundColor: theme.colors.primary,
+    backgroundColor: '#003C6E',
     padding: theme.spacing.md,
     borderRadius: theme.radius.lg,
     alignItems: 'center',

@@ -24,7 +24,7 @@ export default function HomeScreen() {
             <MaterialCommunityIcons 
               name="bus" 
               size={32} 
-              color={theme.colors.primary} 
+              color={'#003C6E'} 
               style={styles.icon}
             />
             <Text style={styles.cardTitle}>Linhas Disponíveis</Text>
@@ -34,7 +34,7 @@ export default function HomeScreen() {
             <MaterialCommunityIcons 
               name="credit-card" 
               size={32} 
-              color={theme.colors.primary} 
+              color={'#003C6E'} 
               style={styles.icon}
             />
             <Text style={styles.cardTitle}>Recarregar Cartão Transporte</Text>
@@ -44,7 +44,7 @@ export default function HomeScreen() {
             <MaterialCommunityIcons 
               name="history" 
               size={32} 
-              color={theme.colors.primary} 
+              color={'#003C6E'} 
               style={styles.icon}
             />
             <Text style={styles.cardTitle}>Histórico de Pagamentos</Text>
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
   },
   welcomeTitle: {
     ...theme.typography.h2,
-    color: theme.colors.primary,
+    color: '#003C6E',
     textAlign: 'center',
     marginBottom: theme.spacing.xs,
   },
@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   card: {
-    border: '2px solid #2e86ab',
+    border: '2px solid #003C6E',
     backgroundColor: '#FFFFFF',
     padding: theme.spacing.lg,
     marginBottom: theme.spacing.md,
@@ -98,13 +98,13 @@ const styles = StyleSheet.create({
   },
   cardTitle: {
     ...theme.typography.h3,
-    color: theme.colors.primary,
+    color: '#003C6E',
     marginVertical: theme.spacing.sm,
     textAlign: 'center',
     borderBottomWidth: 2,  // mantém ou define a borda de baixo
     borderLeftWidth: 2,    // mantém ou define a borda esquerda
     borderRightWidth: 2,   // mantém ou define a borda direita
-    borderColor: '#2e86ab', // cor da borda
+    borderColor: '#003C6E', // cor da borda
     width: '180px',
     height: '60px'
   },

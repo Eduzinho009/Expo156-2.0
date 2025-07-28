@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   data: { fontSize: 16 },
-  valor: { fontWeight: 'bold', fontSize: 16, color: theme.colors.primary },
+  valor: { fontWeight: 'bold', fontSize: 16, color: '#003C6E' },
   vazioContainer: {
     flex: 1,
     justifyContent: 'center',

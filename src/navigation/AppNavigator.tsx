@@ -25,10 +25,10 @@ export default function AppNavigator() {
     <Tab.Navigator
       screenOptions={{
         headerShown: false,
-        tabBarActiveTintColor: theme.colors.primary,
-        tabBarInactiveTintColor: theme.colors.textLight,
+        tabBarActiveTintColor: '#FFFFFF',
+        tabBarInactiveTintColor: '#A1CDF4',
         tabBarStyle: {
-          backgroundColor: theme.colors.card,
+          backgroundColor: '#003C6E', // <-- altere aqui para a cor desejada
           borderTopWidth: 0,
           paddingBottom: 5,
           height: 60,
