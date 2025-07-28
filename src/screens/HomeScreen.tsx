@@ -7,6 +7,7 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 
 
+
 export default function HomeScreen() {
   const navigation = useNavigation();
 
@@ -59,7 +60,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: { 
     flex: 1,
-    backgroundColor: theme.colors.background 
+    backgroundColor: '#FFFFFF',
   },
   content: {
     padding: theme.spacing.lg,
@@ -83,7 +84,8 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   card: {
-    backgroundColor: theme.colors.card,
+    border: '2px solid #2e86ab',
+    backgroundColor: '#FFFFFF',
     padding: theme.spacing.lg,
     marginBottom: theme.spacing.md,
     borderRadius: theme.radius.lg,
@@ -99,6 +101,12 @@ const styles = StyleSheet.create({
     color: theme.colors.primary,
     marginVertical: theme.spacing.sm,
     textAlign: 'center',
+    borderBottomWidth: 2,  // mantém ou define a borda de baixo
+    borderLeftWidth: 2,    // mantém ou define a borda esquerda
+    borderRightWidth: 2,   // mantém ou define a borda direita
+    borderColor: '#2e86ab', // cor da borda
+    width: '180px',
+    height: '60px'
   },
   cardText: {
     ...theme.typography.body,

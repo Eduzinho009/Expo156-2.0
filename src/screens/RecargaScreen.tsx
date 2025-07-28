@@ -47,12 +47,8 @@ export default function RecargaScreen({ navigation }) {
           keyboardType="numeric"
           value={valor}
           onChangeText={setValor}
-          placeholder="Ex: 20"
+          placeholder="Ex: 10,00"
         />
-
-        {/* Mensagem de sucesso */}
-        
-
         <TouchableOpacity style={styles.button} onPress={handleRecarga}>
           <Text style={styles.buttonText}>Pagar</Text>
         </TouchableOpacity><br /><br />
@@ -91,6 +87,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   button: {
+    marginLeft: '125px',
     backgroundColor: theme.colors.primary,
     padding: theme.spacing.md,
     borderRadius: theme.radius.lg,
@@ -98,6 +95,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     flexDirection: 'row',
     ...theme.shadows.md,
+    width: '90px',
   },
   buttonText: { color: '#fff', fontWeight: 'bold', fontSize: theme.typography.body.fontSize },
 });
